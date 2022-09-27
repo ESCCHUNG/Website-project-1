@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Webiste Project #1</title>
+</head>
+<body>
+    <div class="container"> 
+    
+    <nav class="navbar"> 
+        
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a class="home" href="#home">Home</a></li>
+                <li><a class="about" href="#about">About</a></li>
+                <li><a class="interests" href="#interests">Interests</a></li>
+                <li><a class="currentProjects" href="#currentProjects">Projects</a></li>
+                <li><a class="contact" href="#contact">Contact</a></li>
+                <img src="images/Sun.png" alt="day-and-night icon" id="icon">  
+            </ul>
+           <!--  <div class="darkmode-icon">
+            <img src="eclipse-lunar-moon-sun-sun-moon-weather-icon-374732.png" alt="day-and-night icon" width="30" height="30">
+            </div> -->
+        </div>
+    </nav> 
+
+    
+       
+        <section id="home">
+            <h1> Welcome To My Site</h1>
+            <p>Hello there. Welcome to my website. My name is Eric and I am pursuing  a career in Web Developlment. I found an interest in making website pretty recently. It started with a youtube recommendation on how to make a website with HTML.</p>
+        </section>
+        <section id="about">
+            <h1> About Me</h1>
+            <p>My Name is Eric Chung and I am 29 years old. I am pursuing a Web Developlment career. I have a certificate from Las Positas College and have an understanding of HTML,CSS and JavaScript.</p>
+        </section>
+        <section id="interests">
+            <h1> Interests and Experence</h1>
+            <p>Although I don't have much expereince I am more than willing to learn any new language that is needed. I have played around with React js projects and have learned some basics from youtube. I am also an avid gamer</p>
+            <div class="slide"> 
+                <a class="mySlides"><img src="images/HTML Logo.png" alt=""></a>
+                <a class="mySlides"><img src="images/CSS Logo.png" alt=""></a>
+                <a class="mySlides"><img src="images/JavaScript Logo.png" alt=""></a>
+                <a class="mySlides"><img src="images/Photoshop Logo.png" alt=""></a>
+                <a class="mySlides"><img src="images/Valheim-lg.png" alt=""></a>
+                <a class="mySlides"><img src="images/Valorant.png" alt=""></a>
+                <a class="mySlides"><img src="images/React Logo.png" alt=""></a>
+                <a class="mySlides"><img src="images/VSCode Logo.png" alt=""></a>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>    
+                <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+                <!-- <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                </div>   --> 
+            </div>
+            
+
+        </section>
+        <section id="currentProjects">
+            <h1> Projects </h1>
+            <p>There are the current projects that I have completed or am still working on</p>
+        </section>
+        <section id="contact">
+            <h1> Contact Me</h1>
+            <!-- <p>I look forward to interacting with you. If you would like to know more about me, fill our the form below with your information.</p> -->
+            <h3> Send Me Your Contact Information</h3>
+            <form>
+                <div class="form">
+                    <div class="form-group">
+                        <label for="firstname">First Name*</label>
+                        <input type="text" name="firstname" id="firstname" required class="form-element" placeholder="Harry"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name*</label>
+                        <input type="text" name="lastname" id="lastname" required class="form-element" placeholder="Potter"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail address*</label>
+                        <input type="email" name="email" id="email" required class="form-element" placeholder="TheChosen1@hogwarts.wiz"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" name="company" id="company" class="form-element" placeholder="The Leaky Cauldron
+                        "/>
+                    </div>
+                    <div class="form-group-full">
+                        <label for="message">Further Questions</label>
+                        <textarea name="message" id="message" class="form-element" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="submit-group">
+                        <input type="submit" value="SEND MESSAGE"/>
+                    </div>
+                </div>
+            </form>
+              
+        </section>
+        
+         
+    </div>
+   
+
+
+    <script src="index.js">
+
+    </script>
+    
+</body>
+</html>

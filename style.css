@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root{
+    --primary-color: white;
+    --secondary-color: #333;
+    --tertiary-color: #751dda;
+}   
+.dark-theme{
+    --primary-color: #333;
+    --secondary-color: rgb(49, 201, 247);
+    --tertiary-color: rgb(248, 110, 68);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    border-color: black;
+    background: linear-gradient(transparent, var(--tertiary-color));
+}
+
+
+/* Nav Bar start///////////////////////////////////////////////////////////// */
+.navbar{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: flex;  
+    width: 100%;
+    height: 60px;
+    /* background: rgba(0, 0, 0, .7); */
+    justify-content: right;
+    
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 1em 0rem;
+    
+    
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding-right: 2em;
+    position: relative;
+}
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.4em;
+    width: 0%;
+    background-color: blueviolet;
+    bottom: -1em;
+    transition: 300ms;
+}
+
+.navbar li .home:hover::after{
+    width: 55%;
+}
+.navbar li .about:hover::after{
+    width: 57%;
+}
+.navbar li .interests:hover::after{
+    width: 65%;
+}
+.navbar li .currentProjects:hover::after{
+    width: 65%;
+}
+.navbar li .contact:hover::after{
+    width: 63%;
+}
+
+.navbar li a:hover{
+    color: blueviolet; 
+}
+
+.navbar li{
+    margin-right: 3em;
+    margin-left: 1em;
+}
+
+
+/* Nav Bar end////////////////////////////////////////////////////////////// */
+
+
+/* Dark mode button start/////////////////////////////////////////////////// */
+#icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    padding-right: 5.9em;
+    position: relative;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+/* Dark mode button end///////////////////////////////////////////////////// */
+
+
+
+/* Section end////////////////////////////////////////////////////////////// */
+.container{
+    width: 100%;
+    height: 100%;
+    /* Css Smooth Scroll Starts Here */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+section{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    /*  Css Smooth Scroll continued/ends here */
+    scroll-snap-align: center;
+}
+
+section h1{
+    font-size: 64px;
+}
+
+section p{
+    
+    font-size: 1.5rem;
+    width: 50%;
+    padding: 30px;
+    /* background: linear-gradient(skyblue,purple, blue); */
+    /* border: 5px solid gray; */
+    margin: 0;
+}
+/* Section end//////////////////////////////////////////////////////////////// */
+
+/* Gallery start////////////////////////////////////////////////////////////// */
+
+.slide{
+    position: flex;
+    margin: 4px;
+}
+
+.prev, .next{
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    width: 5vw;
+    margin-top: 300px;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+@media only screen and (max-width: 800px) {
+    .prev, .next {
+        font-size: 11px
+    }
+
+  }
+
+
+
+/* reference for tomorrow : https://www.w3schools.com/howto/howto_js_slideshow.asp */
+/* Gallery end////////////////////////////////////////////////////////////// */
+
+
+
+
+/* Form start////////////////////////////////////////////////////////////// */
+.form{
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    background-color: rgb(114, 112, 112);
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    /* width: 100vh; */
+    color: white;
+    
+} 
+
+.form-element{
+    appearance: none;
+    outline: none;
+    border: none;
+    display: block;
+    width: 90%;
+    border-radius: 8px;
+    padding: 12px 16px;
+    background-color: #f3f3f3;
+    resize: none;
+    
+
+}
+.form-element:focus{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(44, 128, 143);
+    color:white;
+    transition: 0.5s;
+}
+
+
+
+.form-group-full{
+    color: white;
+    grid-column: 1 / -1;
+    resize: none;
+}
+
+.form-group-full textarea{
+    min-width: 57vw;
+    min-height: 7vw;
+}
+
+
+.submit-group{
+    grid-column: 1 / -1;
+    text-align: right;
+}
+
+.submit-group input[type="submit"]{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+
+    padding: 12px 16px;
+    background-color: var(--tertiary-color);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-group input:hover{
+    background-color: rgb(44, 128, 143);
+
+}
+/* Form end//////////////////////////////////////////////////////////////// */
+
+
+
+
+section#home{
+    /* background images go here */
+}
+section#about{
+    /* background images go here */
+}
+section#interests{
+    /* background images go here */
+}
+section#currentProjects{
+    /* background images go here */
+}
+section#contact{
+    /* background images go here */
+}
+
+
+
+/* Forum media /////////////////////////////////////////////////////////////*/
+@media(min-width: 800px){
+    .form{ 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .form-group-full textarea{
+        width: auto;
+    }
+}
+/* Forum media /////////////////////////////////////////////////////////////*/
+
+
+/* Navbar media ////////////////////////////////////////////////////////////*/
+@media (max-width: 800px){
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    .navbar-links.active li a{
+        color: white;
+    }
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+        background: rgba(0, 0, 0, .5);
+    }
+    .navbar-links ul li {
+        text-align: right;
+    }
+    .navbar-links ul li {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+        right: 1000px;
+    }
+    
+}
+/* Navbar media ////////////////////////////////////////////////////////////*/
