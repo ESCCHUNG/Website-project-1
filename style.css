@@ -296,6 +296,13 @@ section p{
     background-color: rgb(44, 128, 143);
 
 }
+#status {
+    grid-column: 1 / -1;
+    text-align:right 
+}
+#status.success{
+    background-color: var(--tertiary-color);
+}
 /* Form end//////////////////////////////////////////////////////////////// */
 
 
