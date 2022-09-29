@@ -276,7 +276,7 @@ section p{
 
 .submit-group{
     grid-column: 1 / -1;
-    text-align: right;
+    /* text-align: right; */
 }
 
 .submit-group input[type="submit"]{
@@ -284,7 +284,8 @@ section p{
     border: none;
     outline: none;
     background: none;
-
+    min-width: 30vw;
+    min-height: 2vw;
     padding: 12px 16px;
     background-color: var(--tertiary-color);
     border-radius: 8px;
@@ -296,13 +297,7 @@ section p{
     background-color: rgb(44, 128, 143);
 
 }
-#status {
-    grid-column: 1 / -1;
-    text-align:right 
-}
-#status.success{
-    background-color: var(--tertiary-color);
-}
+
 /* Form end//////////////////////////////////////////////////////////////// */
 
 
