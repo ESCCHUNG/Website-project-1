@@ -119,3 +119,6 @@
     padding: 12px 16px;
     border-radius: 18px;
   }
+  .differenceContainer {
+    display: none;
+  }
