@@ -103,4 +103,13 @@
   .total {
     font-size: 2rem;
   }
-  
+  .goBack{
+    appearance: none;
+    border: none;
+    outline: none;
+    
+
+    padding: 12px 16px;
+    background: var(red);
+    border-radius: 8px;
+  }
