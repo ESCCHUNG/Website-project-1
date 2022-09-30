@@ -103,13 +103,19 @@
   .total {
     font-size: 2rem;
   }
-  .goBack{
+  .back:hover{
+    background-color: rgb(44, 128, 143);
+
+  }
+  .back{
+    
     appearance: none;
     border: none;
     outline: none;
-    
-
+    background-color: #353959;
+    min-width: 100%;
+    min-height: 2vw;
+    /* align-items: right;   */  
     padding: 12px 16px;
-    background: var(red);
-    border-radius: 8px;
+    border-radius: 18px;
   }
