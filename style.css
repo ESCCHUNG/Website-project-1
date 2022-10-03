@@ -367,3 +367,61 @@ section#contact{
     
 }
 /* Navbar media ////////////////////////////////////////////////////////////*/
+
+
+
+
+/* Projects Section start//////////////////////////////////////////*/
+
+.tipCalcPreview{
+    position: relative;
+    width: 400px; 
+}
+
+.tipImg{
+    display: block;
+    width: 100%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+}
+
+.tipCalcOverlay{
+   position: absolute; 
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background:rgba(0, 0, 0, .5);
+   color: #ffffff;
+   font-family: Arial, Helvetica, sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   opacity: 0;
+   transition: opacity 0.25s;
+}
+
+.tipCalcOverlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.tipCalcOverlay:hover{
+    opacity: 1;
+}
+
+.tipCalcOverlay:hover > *{
+    transform: translateY(0);
+}
+
+.tipTitle{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.tipDescription{
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+/* Projects Section end////////////////////////////////////////////*/
