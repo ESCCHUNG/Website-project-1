@@ -406,6 +406,10 @@ section#contact{
     transition: transform 0.25s;
 }
 
+.tipCalcOverlayBlur{
+    backdrop-filter: blur(5px);
+}
+
 .tipCalcOverlay:hover{
     opacity: 1;
 }
