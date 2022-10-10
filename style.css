@@ -175,7 +175,6 @@ section p{
 /* Gallery start////////////////////////////////////////////////////////////// */
 
 .slide{
-    
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -183,8 +182,10 @@ section p{
     margin: 4px;
     padding: 0;
     margin: 0;
+    background:rgba(0, 0, 0, .5);
 }
-
+/* tomorrow find a way to seperate each img element so it can have it's own background
+ */
 /* .prev, .next{
     cursor: pointer;
     align-items: center;
