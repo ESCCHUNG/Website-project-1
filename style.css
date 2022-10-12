@@ -182,7 +182,14 @@ section p{
     margin: 4px;
     padding: 0;
     margin: 0;
-    background:rgba(0, 0, 0, .5);
+    grid-gap: 10px;
+}
+
+.slide img {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    
 }
 /* tomorrow find a way to seperate each img element so it can have it's own background
  */
@@ -302,7 +309,7 @@ section p{
 
 .submit-group input:hover{
     background-color: rgb(44, 128, 143);
-
+    
 }
 
 /* Form end//////////////////////////////////////////////////////////////// */
