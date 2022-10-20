@@ -174,32 +174,24 @@ section p{
 
 /* Gallery start////////////////////////////////////////////////////////////// */
 
+.imgPreview{
+    position: relative;
+    width: 20vw
+}
 .slide{
-    box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    position:relative;
-    margin: 4px;
-    padding: 0;
-    margin: 0;
-    grid-gap: 10px;
-    
-    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .2fr .2fr .2fr .2fr;
 }
 
 .slide img {
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
-    border-radius: 10px;
-    
 }
 
 
 
 .img1{
-    opacity: 1;
-    transition: opacity 0.25s;   
-/*     where you left off. next time you need to find out how to select each image with a hover affect */
+
+/*     you might need to start over on this part*/
 }
 
 .img2{
